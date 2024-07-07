@@ -255,8 +255,8 @@
 						"item": "minecraft:carved_pumpkin",
 						"want_amount": 1,
 						"surplus_amount": 1,
-						"priority": 7
-					},
+							"priority": 7
+						},
 					{
 						"item": "minecraft:netherite_chestplate",
 						"want_amount": 1,
@@ -292,6 +292,12 @@
 						"want_amount": 1,
 						"surplus_amount": 1,
 						"priority": 5
+					},
+					{
+						"item": "minecraft:elytra",
+						"want_amount": 1,
+						"surplus_amount": 1,
+						"priority": 6
 					},
 					{
 						"item": "minecraft:netherite_leggings",
@@ -364,213 +370,87 @@
 						"want_amount": 1,
 						"surplus_amount": 1,
 						"priority": 5
+					},
+					{
+						"item": "minecraft:shield",
+						"want_amount": 1,
+						"surplus_amount": 1,
+						"priority": 6
 					}
 				]
 			},
-			"minecraft:environment_sensor": {
-				"triggers": {
-					"filters": {
-						"test": "is_underwater",
-						"operator": "==",
-						"value": true
-					},
-					"event": "minecraft:start_transforming"
-				}
+			"minecraft:knockback_resistance": {
+				"value": 0.6
 			},
-			"minecraft:despawn": {
-				"despawn_from_distance": {}
+			"minecraft:can_pickup_items": {},
+			"minecraft:scale": {
+				"value": 1
 			},
-			"minecraft:behavior.equip_item": {
-				"priority": 2
+			"minecraft:attack_cooldown": {
+				"attack_cooldown": 0.3
 			},
-			"minecraft:behavior.melee_attack": {
-				"priority": 3
-			},
-			"minecraft:behavior.stomp_turtle_egg": {
-				"priority": 4,
-				"speed_multiplier": 1,
-				"search_range": 10,
-				"search_height": 2,
-				"goal_radius": 1.14,
-				"interval": 20
-			},
-			"minecraft:behavior.pickup_items": {
-				"priority": 6,
-				"max_dist": 3,
-				"goal_radius": 2,
-				"speed_multiplier": 1,
-				"pickup_based_on_chance": true,
-				"can_pickup_any_item": true
-			},
-			"minecraft:behavior.random_stroll": {
-				"priority": 7,
-				"speed_multiplier": 1
-			},
-			"minecraft:behavior.look_at_player": {
-				"priority": 8,
-				"look_distance": 6,
-				"probability": 0.02
-			},
-			"minecraft:behavior.random_look_around": {
-				"priority": 9
-			},
-			"minecraft:behavior.hurt_by_target": {
+			"minecraft:behavior.hurt_by": {
 				"priority": 1
+			},
+			"minecraft:behavior.vex_random_move": {
+				"priority": 3,
+				"speed_multiplier": 0.3
 			},
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 2,
 				"must_see": true,
-				"reselect_targets": true,
-				"within_radius": 25,
-				"must_see_forget_duration": 17,
-				"entity_types": [
-					{
-						"filters": {
-							"any_of": [
-								{
-									"test": "is_family",
-									"subject": "other",
-									"value": "player"
-								},
-								{
-									"test": "is_family",
-									"subject": "other",
-									"value": "snowgolem"
-								},
-								{
-									"test": "is_family",
-									"subject": "other",
-									"value": "irongolem"
-								}
-							]
-						},
-						"max_dist": 35
-					},
-					{
-						"filters": {
-							"any_of": [
-								{
-									"test": "is_family",
-									"subject": "other",
-									"value": "villager"
-								},
-								{
-									"test": "is_family",
-									"subject": "other",
-									"value": "wandering_trader"
-								}
-							]
-						},
-						"max_dist": 35,
-						"must_see": false
-					},
-					{
-						"filters": {
-							"all_of": [
-								{
-									"test": "is_family",
-									"subject": "other",
-									"value": "baby_turtle"
-								},
-								{
-									"test": "in_water",
-									"subject": "other",
-									"operator": "!=",
-									"value": true
-								}
-							]
-						},
-						"max_dist": 35
-					}
-				]
+				"must_reach": true,
+				"within_radius": 32,
+				"on_success": {
+					"event": "minecraft:on_hurt"
+				}
 			},
-			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
+			"minecraft:behavior.attack": {
+				"priority": 3,
+				"speed_multiplier": 1.25
 			},
-			"minecraft:conditional_bandwidth_optimization": {}
+			"minecraft:behavior.random_stroll": {
+				"priority": 2,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.look_at_target": {
+				"priority": 2
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 2,
+				"must_see": true,
+				"search_radius": 16
+			},
+			"minecraft:behavior.vex_charge_attack": {
+				"priority": 3
+			},
+			"minecraft:behavior.float": {
+				"priority": 1
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"filters": {
+						"test": "is_drowned",
+						"subject": "self",
+						"operator": "==",
+						"value": true
+					},
+					"event": "minecraft:convert_to_drowned"
+				}
+			},
+			"minecraft:sound_effects": {
+				"damage_sound": "random.hurt",
+				"death_sound": "random.death",
+				"ambient_sound": "mob.vindicator.idle",
+				"step_sound": "mob.vindicator.step"
+			}
 		},
 		"events": {
-			"minecraft:entity_spawned": {
-				"randomize": [
-					{
-						"weight": 380,
-						"remove": {},
-						"add": {
-							"component_groups": ["minecraft:zombie_adult", "minecraft:can_have_equipment"]
-						}
-					},
-					{
-						"weight": 17,
-						"remove": {},
-						"add": {
-							"component_groups": ["minecraft:zombie_baby", "minecraft:can_have_equipment"]
-						}
-					},
-					{
-						"weight": 3,
-						"remove": {},
-						"add": {
-							"component_groups": ["minecraft:zombie_baby", "minecraft:zombie_jockey", "minecraft:can_have_equipment"]
-						}
-					}
-				]
-			},
-			"minecraft:as_adult": {
-				"add": {
-					"component_groups": ["minecraft:zombie_adult"]
+			"minecraft:on_hurt": {
+				"run_command": {
+					"command": "summon experience_orb ~ ~ ~",
+					"target": "self"
 				}
-			},
-			"minecraft:as_baby": {
-				"add": {
-					"component_groups": ["minecraft:zombie_baby"]
-				}
-			},
-			"minecraft:start_transforming": {
-				"add": {
-					"component_groups": ["minecraft:start_drowned_transformation"]
-				},
-				"remove": {
-					"component_groups": ["minecraft:look_to_start_drowned_transformation"]
-				}
-			},
-			"minecraft:stop_transforming": {
-				"add": {
-					"component_groups": ["minecraft:look_to_start_drowned_transformation"]
-				},
-				"remove": {
-					"component_groups": ["minecraft:start_drowned_transformation"]
-				}
-			},
-			"minecraft:convert_to_drowned": {
-				"sequence": [
-					{
-						"filters": {
-							"test": "has_component",
-							"operator": "!=",
-							"value": "minecraft:is_baby"
-						},
-						"add": {
-							"component_groups": ["minecraft:convert_to_drowned"]
-						},
-						"remove": {
-							"component_groups": ["minecraft:start_drowned_transformation"]
-						}
-					},
-					{
-						"filters": {
-							"test": "has_component",
-							"value": "minecraft:is_baby"
-						},
-						"add": {
-							"component_groups": ["minecraft:convert_to_baby_drowned"]
-						},
-						"remove": {
-							"component_groups": ["minecraft:start_drowned_transformation"]
-						}
-					}
-				]
 			}
 		}
 	}
