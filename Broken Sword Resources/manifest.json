@@ -1,0 +1,23 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Broken Sword",
+		"description": "Broken Sword Resource Pack",
+		"uuid": "cf075fdd-bc67-b7c2-80aa-795547482937",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.5.1"]
+		}
+	},
+	"modules": [
+		{
+			"description": "Broken Sword",
+			"type": "resources",
+			"uuid": "df493db1-8720-8e71-71aa-2d6e010733df",
+			"version": [1, 0, 0]
+		}
+	]
+}

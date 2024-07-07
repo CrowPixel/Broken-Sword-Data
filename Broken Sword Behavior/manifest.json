@@ -1,0 +1,29 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Broken Sword",
+		"description": "Broken Sword Behavior Pack",
+		"uuid": "c3d21bfa-3777-e685-e19d-d1c41c536771",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.5.1"]
+		}
+	},
+	"modules": [
+		{
+			"description": "Behavior",
+			"version": [1, 0, 0],
+			"uuid": "faaa6229-fa96-c01d-a8c9-ef7e18a59627",
+			"type": "data"
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "cf075fdd-bc67-b7c2-80aa-795547482937",
+			"version": [1, 0, 0]
+		}
+	]
+}
