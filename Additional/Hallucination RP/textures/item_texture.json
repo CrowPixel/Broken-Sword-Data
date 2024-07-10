@@ -1,0 +1,24 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "crucifix": {
+      "textures": "textures/items/m_crucifix"
+    },
+    "holywater": {
+      "textures": "textures/items/m_holywater"
+    },
+    "holysalt": {
+      "textures": "textures/items/m_holysalt"
+    },
+    "biblelocked": {
+      "textures": "textures/items/m_biblelocked"
+    },
+    "bible": {
+      "textures": "textures/items/m_bible"
+    },
+    "imageofchrist": {
+      "textures": "textures/items/m_imageofchrist"
+    }
+  }
+}

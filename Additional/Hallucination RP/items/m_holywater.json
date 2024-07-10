@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "m:holywater",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "holywater",
+      "minecraft:use_animation": "drink",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

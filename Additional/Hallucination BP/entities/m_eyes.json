@@ -1,0 +1,198 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "m:eyes",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "m:eyes"
+    },
+    "components": {
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:type_family": {
+        "family": [
+          "hallucination"
+        ]
+      },
+      "minecraft:collision_box": {
+        "height": 1.8,
+        "width": 0.0
+      },
+      "minecraft:health": {
+        "value": 5,
+        "max": 5
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:movement": {
+        "value": 0.0
+      },
+      "minecraft:navigation.walk": {
+        "can_walk": false,
+        "avoid_water": false,
+        "avoid_damage_blocks": false
+      },
+      "minecraft:damage_sensor": [
+        {
+          "cause": "fall",
+          "deals_damage": false
+        }
+      ],
+      "minecraft:knockback_resistance": {
+        "value": 1.0,
+        "max": 1.0
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 1,
+        "track_target": true,
+        "speed_multiplier": 0
+      },
+      "minecraft:behavior.move_towards_target": {
+        "priority": 2,
+        "speed_multiplier": 0,
+        "within_radius": 256
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0,
+        "xz_dist": 0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 256,
+        "probability": 100
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 3,
+        "must_reach": false,
+        "must_see": false,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                }
+              ]
+            },
+            "must_see": false,
+            "max_dist": 10
+          }
+        ],
+        "within_radius": 300
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+      "minecraft:persistent": {},
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:follow_range": {
+        "value": 256
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 0 : 0"
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.0
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:breathable": {
+        "breathesWater": true,
+        "totalSupply": 9999999,
+        "suffocateTime": -1,
+        "generatesBubbles": true,
+        "breathesAir": true
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:behavior.float": {
+        "priority": 2,
+        "speed_multiplier": 0
+      },
+      "minecraft:fall_damage": {
+        "value": 0
+      },
+      "minecraft:on_target_acquired": {
+        "event": "on:target_acquired",
+        "target": "self"
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "time": 45,
+        "time_down_event": {
+          "event": "on:tick_action"
+        }
+      }
+    },
+    "events": {
+      "on:death": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:hurt": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:hurt_by_player": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:ignite": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:target_acquired": {
+        "run_command": {
+          "command": [
+            "tp @e[type=m:eyes] ~ -65 ~"
+          ]
+        }
+      },
+      "on:target_escape": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:wake_with_owner": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:tick_action": {
+        "run_command": {
+          "command": [
+            "tp @e[type=m:eyes] ~ -65 ~"
+          ]
+        }
+      }
+    }
+  }
+}

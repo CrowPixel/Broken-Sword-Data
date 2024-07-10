@@ -1,0 +1,69 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "m:amanomaly",
+      "population_control": "monster"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:brightness_filter": {
+          "min": 7.0,
+          "max": 15.0,
+          "adjust_for_weather": false
+        },
+        "minecraft:weight": {
+          "default": 1
+        },
+        "minecraft:world_age_filter": {
+          "min": 26400
+        },
+        "minecraft:delay_filter": {
+          "min": 30,
+          "max": 120,
+          "identifier": "m:amanomaly",
+          "spawn_chance": 20
+        },
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 1
+        },
+        "minecraft:distance_filter": {
+          "min": 40,
+          "max": 50
+        },
+        "minecraft:density_limit": {
+          "surface": 1,
+          "underground": 0
+        },
+        "minecraft:biome_filter": [
+          {
+            "any_of": [
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "overworld"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "overworld_generation"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "the_end"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "nether"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

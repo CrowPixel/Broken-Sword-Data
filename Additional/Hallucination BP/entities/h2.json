@@ -1,0 +1,322 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "m:h2",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "m:h2"
+    },
+    "components": {
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:type_family": {
+        "family": [
+          "hallucination"
+        ]
+      },
+      "minecraft:collision_box": {
+        "height": 1.9,
+        "width": 0.6
+      },
+      "minecraft:health": {
+        "value": 100,
+        "max": 100
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:movement": {
+        "value": 0.0
+      },
+      "minecraft:navigation.climb": {
+        "can_path_over_water": true,
+        "avoid_water": false,
+        "avoid_damage_blocks": false
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:attack": {
+        "damage": 0
+      },
+      "minecraft:damage_sensor": [
+        {
+          "cause": "fall",
+          "deals_damage": false
+        }
+      ],
+      "minecraft:knockback_resistance": {
+        "value": 1.0,
+        "max": 1.0
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 1,
+        "track_target": true,
+        "speed_multiplier": 10
+      },
+      "minecraft:behavior.move_towards_target": {
+        "priority": 2,
+        "speed_multiplier": 1,
+        "within_radius": 256
+      },
+      "minecraft:behavior.offer_flower": {
+        "priority": 5
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0,
+        "xz_dist": 0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 64,
+        "probability": 10
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 3,
+        "must_reach": false,
+        "must_see": true,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                }
+              ]
+            },
+            "must_see": true,
+            "max_dist": 16.0
+          }
+        ],
+        "within_radius": 16
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+      "minecraft:persistent": {},
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:follow_range": {
+        "value": 256
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 0 : 0"
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.0
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:behavior.owner_hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.owner_hurt_target": {
+        "priority": 2
+      },
+      "minecraft:annotation.break_door": {
+        "break_time": 1.0,
+        "min_difficulty": "peaceful"
+      },
+      "minecraft:breathable": {
+        "breathesWater": true,
+        "totalSupply": 9999999,
+        "suffocateTime": -1,
+        "generatesBubbles": true,
+        "breathesAir": true
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:behavior.float": {
+        "priority": 2,
+        "speed_multiplier": 1
+      },
+      "minecraft:fall_damage": {
+        "value": 0
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "time": 30,
+        "time_down_event": {
+          "event": "on:tick_action"
+        }
+      },
+      "minecraft:teleport": {
+        "randomTeleports": true,
+        "maxRandomTeleportTime": 10,
+        "randomTeleportCube": [
+          1,
+          1,
+          1
+        ],
+        "targetDistance": 3,
+        "lightTeleportChance": 5
+      },
+      "minecraft:lookat": {
+        "search_radius": 128.0,
+        "set_target": true,
+        "look_cooldown": [
+          1,
+          1
+        ],
+        "filters": {
+          "all_of": [
+            {
+              "subject": "other",
+              "test": "is_family",
+              "value": "player"
+            }
+          ]
+        }
+      },
+      "minecraft:on_target_acquired": {
+        "event": "on:target_acquired",
+        "target": "self"
+      }
+    },
+    "events": {
+      "on:death": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:hurt": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:hurt_by_player": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:ignite": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:target_acquired": {
+        "randomize": [
+          {
+            "run_command": {
+              "command": [
+                "function halluc1"
+              ]
+            },
+            "weight": 1
+          },
+          {
+            "run_command": {
+              "command": [
+                "function halluc2"
+              ]
+            },
+            "weight": 1
+          },
+          {
+            "run_command": {
+              "command": [
+                "function halluc3"
+              ]
+            },
+            "weight": 1
+          },
+          {
+            "run_command": {
+              "command": [
+                "function halluc4"
+              ]
+            },
+            "weight": 1
+          },
+          {
+            "run_command": {
+              "command": [
+                "function halluc5"
+              ]
+            },
+            "weight": 1
+          },
+          {
+            "run_command": {
+              "command": [
+                "function halluc6"
+              ]
+            },
+            "weight": 1
+          },
+          {
+            "run_command": {
+              "command": [
+                "function halluc7"
+              ]
+            },
+            "weight": 1
+          },
+          {
+            "run_command": {
+              "command": [
+                "function halluc8"
+              ]
+            },
+            "weight": 1
+          },
+          {
+            "run_command": {
+              "command": [
+                "function halluc9"
+              ]
+            },
+            "weight": 1
+          },
+          {
+            "run_command": {
+              "command": [
+                "function halluc10"
+              ]
+            },
+            "weight": 1
+          }
+        ]
+      },
+      "on:target_escape": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:wake_with_owner": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:tick_action": {
+        "run_command": {
+          "command": [
+            "tp @e[type=m:h2] ~ -65~"
+          ]
+        }
+      }
+    }
+  }
+}

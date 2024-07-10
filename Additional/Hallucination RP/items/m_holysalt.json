@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "m:holysalt",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "holysalt",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

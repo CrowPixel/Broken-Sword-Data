@@ -1,0 +1,221 @@
+{
+  "entity_sounds": {
+    "entities": {
+      "m:anomaly1": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "ambient": {
+            "sound": "mob.m_anomaly1.ambient",
+            "volume": [
+              1.0,
+              1.0
+            ],
+            "pitch": [
+              0.8,
+              1.2
+            ]
+          },
+          "hurt": "mob.m_anomaly1.hit",
+          "death": "mob.m_anomaly1.death",
+          "attack": "mob.m_anomaly1.chase",
+          "step": {
+            "sound": "mob.m_anomaly1.walk",
+            "volume": 1.0,
+            "pitch": 1.0
+          }
+        }
+      },
+      "m:anomaly2": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "ambient": {
+            "sound": "mob.m_anomaly1.ambient",
+            "volume": [
+              1.0,
+              1.0
+            ],
+            "pitch": [
+              0.8,
+              1.2
+            ]
+          },
+          "hurt": "mob.m_anomaly1.hit",
+          "death": "mob.m_anomaly1.death",
+          "attack": "mob.m_anomaly1.chase",
+          "step": {
+            "sound": "mob.m_anomaly1.walk",
+            "volume": 1.0,
+            "pitch": 1.0
+          }
+        }
+      },
+      "m:anomaly3": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "ambient": {
+            "sound": "mob.m_anomaly1.ambient",
+            "volume": [
+              1.0,
+              1.0
+            ],
+            "pitch": [
+              0.8,
+              1.2
+            ]
+          },
+          "hurt": "mob.m_anomaly1.hit",
+          "death": "mob.m_anomaly1.death",
+          "attack": "mob.m_anomaly1.chase",
+          "step": {
+            "sound": "mob.m_anomaly1.walk",
+            "volume": 1.0,
+            "pitch": 1.0
+          }
+        }
+      },
+      "m:amanomaly": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "ambient": {
+            "sound": "mob.m_anomaly1.ambient",
+            "volume": [
+              1.0,
+              1.0
+            ],
+            "pitch": [
+              0.8,
+              1.2
+            ]
+          },
+          "hurt": "mob.m_anomaly1.hit",
+          "death": "mob.m_anomaly1.death",
+          "attack": "mob.m_anomaly1.chase",
+          "step": {
+            "sound": "mob.m_anomaly1.walk",
+            "volume": 1.0,
+            "pitch": 1.0
+          }
+        }
+      },
+      "m:damanomaly": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "ambient": {
+            "sound": "mob.m_damanomaly.ambient",
+            "volume": [
+              1.0,
+              1.0
+            ],
+            "pitch": [
+              0.8,
+              1.2
+            ]
+          },
+          "hurt": "mob.m_anomaly1.hit",
+          "death": "mob.m_anomaly1.death",
+          "attack": "mob.m_anomaly1.chase",
+          "step": {
+            "sound": "mob.m_anomaly1.walk",
+            "volume": 1.0,
+            "pitch": 1.0
+          }
+        }
+      },
+      "m:h2": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "ambient": {
+            "sound": "mob.anomaly1.ambient",
+            "volume": [
+              1.0,
+              1.0
+            ],
+            "pitch": [
+              0.8,
+              1.2
+            ]
+          },
+          "hurt": "mob.anomaly1.hit",
+          "death": "mob.anomaly1.death",
+          "step": {
+            "sound": "mob.anomaly1.walk",
+            "volume": 1.0,
+            "pitch": 1.0
+          }
+        }
+      },
+      "m:hf": {
+        "volume": 10.0,
+        "pitch": [
+          1.0,
+          1.0
+        ],
+        "amiokay": "mob.m_hf.amiokay",
+        "areyoualone": "mob.m_hf.areyoualone",
+        "begoneevil": "mob.m_hf.begoneevil",
+        "blessme": "mob.m_hf.blessme",
+        "block": "mob.m_hf.block",
+        "callmeadmin": "mob.m_hf.callmeadmin",
+        "deepslate": "mob.m_hf.deepslate",
+        "goingtokillmyself": "mob.m_hf.goingtokillmyself",
+        "grass": "mob.m_hf.grass",
+        "hearingagain": "mob.m_hf.hearingagain",
+        "holyspiritamen": "mob.m_hf.holyspiritamen",
+        "ihearwhis": "mob.m_hf.ihearwhis",
+        "insideurhead": "mob.m_hf.insideurhead",
+        "killmyself": "mob.m_hf.killmyself",
+        "killsomeone": "mob.m_hf.killsomeone",
+        "killyourself": "mob.m_hf.killyourself",
+        "leaveforsafe": "mob.m_hf.leaveforsafe",
+        "leavemealone": "mob.m_hf.leavemealone",
+        "lordnow": "mob.m_hf.lordnow",
+        "mynameis": "mob.m_hf.mynameis",
+        "nohope": "mob.m_hf.nohope",
+        "noone": "mob.m_hf.noone",
+        "nosaveyou": "mob.m_hf.nosaveyou",
+        "nothingrisk": "mob.m_hf.nothingrisk",
+        "notseeme": "mob.m_hf.notseeme",
+        "protectme": "mob.m_hf.protectme",
+        "protectus": "mob.m_hf.protectus",
+        "refrain": "mob.m_hf.refrain",
+        "regretnothing": "mob.m_hf.regretnothing",
+        "shake": "mob.m_hf.shake",
+        "someonehack": "mob.m_hf.someonehack",
+        "spotted": "mob.m_hf.spotted",
+        "stopplease": "mob.m_hf.stopplease",
+        "strangethreat": "mob.m_hf.strangethreat",
+        "thankyoulord": "mob.m_hf.thankyoulord",
+        "trusttheman": "mob.m_hf.trusttheman",
+        "turnaround": "mob.m_hf.turnaround",
+        "voiceswontstop": "mob.m_hf.voiceswontstop",
+        "wecometotellyou": "mob.m_hf.wecometotellyou",
+        "whisper": "mob.m_hf.whisper",
+        "wontstop": "mob.m_hf.wontstop"
+      }
+    }
+  }
+}

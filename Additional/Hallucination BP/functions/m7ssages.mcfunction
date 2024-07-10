@@ -1,0 +1,3 @@
+tellraw @p {"rawtext":[{"text":"<Server> WE COME TO TELL YOU THAT THERE IS A STRANGE ANOMALY IN YOUR WORLD. WE RECOMMEND TO DELETE YOUR WORLD IMMEDIATELY AS THE ANOMALY COULD SPREAD THROUGH INSIDE AND OUTSIDE THE SERVER..."}]}
+playsound mob.m_hf.wecometotellyou @p
+tp @e[type=m:hf] ~ -65 ~

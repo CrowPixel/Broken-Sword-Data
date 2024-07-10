@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "m:holywater"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " A ",
+      "ABA",
+      " A "
+    ],
+    "key": {
+      "A": {
+        "item": "m:holysalt",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:potion",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "m:holywater",
+      "count": 1
+    }
+  }
+}

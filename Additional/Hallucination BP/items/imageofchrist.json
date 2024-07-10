@@ -1,0 +1,78 @@
+{
+  "format_version": "1.17.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "m:imageofchrist",
+      "category": "nature"
+    },
+    "components": {
+      "minecraft:hand_equipped": false,
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": false,
+      "minecraft:allow_off_hand": false,
+      "minecraft:icon": {
+        "texture": "imageofchrist"
+      },
+      "minecraft:display_name": {
+        "value": "Image Of Christ"
+      },
+      "tag:minecraft:transform_materials": {},
+      "minecraft:cooldown": {
+        "category": "imageofchrist",
+        "duration": 15
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "on_use_event"
+        }
+      }
+    },
+    "events": {
+      "on_use_event": {
+        "swing": {},
+        "randomize": [
+          {
+            "run_command": {
+              "command": [
+                "function image1"
+              ]
+            },
+            "weight": 3
+          },
+          {
+            "run_command": {
+              "command": [
+                "function image2"
+              ]
+            },
+            "weight": 3
+          },
+          {
+            "run_command": {
+              "command": [
+                "function image3"
+              ]
+            },
+            "weight": 3
+          },
+          {
+            "run_command": {
+              "command": [
+                "function image4"
+              ]
+            },
+            "weight": 3
+          },
+          {
+            "run_command": {
+              "command": [
+                "function image5"
+              ]
+            },
+            "weight": 1
+          }
+        ]
+      }
+    }
+  }
+}

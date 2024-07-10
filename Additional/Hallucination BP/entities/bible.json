@@ -1,0 +1,143 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "m:bible",
+      "is_spawnable": true,
+      "is_summonable": false,
+      "is_experimental": false,
+      "runtime_identifier": "m:bible"
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": []
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:collision_box": {
+        "height": 0.4,
+        "width": 0.8
+      },
+      "minecraft:movement": {
+        "value": 0
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "can_walk": false
+      },
+      "minecraft:annotation.open_door": {},
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:behavior.random_stroll": {
+        "priority": 11,
+        "speed_multiplier": 0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 12,
+        "look_distance": 0,
+        "probability": 0
+      },
+      "minecraft:physics": {},
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 0 : 0"
+      },
+      "minecraft:underwater_movement": {
+        "value": 0
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:equip_item": {},
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 3,
+        "within_radius": 5,
+        "must_reach": false,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "hallucination"
+                }
+              ]
+            },
+            "must_see": false
+          }
+        ],
+        "must_see": false
+      },
+      "minecraft:attack": {
+        "damage": 500
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 2,
+        "speed_multiplier": 0.1,
+        "target_dist": 5,
+        "max_dist": 256,
+        "random_stop_interval": 100,
+        "track_target": true,
+        "reach_multiplier": 0
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0,
+        "max": 1.0
+      },
+      "minecraft:breathable": {
+        "breathesWater": true,
+        "totalSupply": 99999999,
+        "suffocateTime": -1,
+        "generatesBubbles": true,
+        "breathesAir": true
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/bible.json"
+      }
+    },
+    "events": {
+      "on:death": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:hurt": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:hurt_by_player": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:ignite": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:target_acquired": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:target_escape": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:wake_with_owner": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:tick_action": {
+        "run_command": {
+          "command": []
+        }
+      }
+    }
+  }
+}

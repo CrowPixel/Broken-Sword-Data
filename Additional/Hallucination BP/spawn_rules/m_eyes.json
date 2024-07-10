@@ -1,0 +1,60 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "m:eyes",
+      "population_control": "monster"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_underground": {},
+        "minecraft:spawns_on_surface": {},
+        "minecraft:brightness_filter": {
+          "min": 0.0,
+          "max": 7.0,
+          "adjust_for_weather": false
+        },
+        "minecraft:weight": {
+          "default": 2
+        },
+        "minecraft:world_age_filter": {
+          "min": 13200
+       },
+        "minecraft:delay_filter": {
+          "min": 45,
+          "max": 120,
+          "identifier": "m:eyes",
+          "spawn_chance": 95
+        },
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 1
+        },
+		  "minecraft:distance_filter": {
+          "min": 30,
+          "max": 35
+        },
+        "minecraft:density_limit": {
+          "surface": 5,
+          "underground": 5
+        },
+        "minecraft:biome_filter": [
+          {
+            "any_of": [
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "overworld"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "overworld_generation"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

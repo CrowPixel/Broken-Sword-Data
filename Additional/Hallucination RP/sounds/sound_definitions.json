@@ -1,0 +1,431 @@
+{
+  "mob.m_anomaly1.ambient": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/anomaly1/ambient1",
+      "sounds/mob/anomaly1/ambient2",
+      "sounds/mob/anomaly1/ambient3",
+      "sounds/mob/anomaly1/ambient4",
+      "sounds/mob/anomaly1/ambient5",
+      "sounds/mob/anomaly1/ambient6",
+      "sounds/mob/anomaly1/ambient7",
+      "sounds/mob/anomaly1/ambient8",
+      "sounds/mob/anomaly1/ambient9",
+      "sounds/mob/anomaly1/ambient10",
+      "sounds/mob/anomaly1/ambient11",
+      "sounds/mob/anomaly1/ambient12"
+    ]
+  },
+  "mob.m_anomaly2.ambient": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/anomaly1/ambient1",
+      "sounds/mob/anomaly1/ambient2",
+      "sounds/mob/anomaly1/ambient3",
+      "sounds/mob/anomaly1/ambient4",
+      "sounds/mob/anomaly1/ambient5",
+      "sounds/mob/anomaly1/ambient6",
+      "sounds/mob/anomaly1/ambient7",
+      "sounds/mob/anomaly1/ambient8",
+      "sounds/mob/anomaly1/ambient9",
+      "sounds/mob/anomaly1/ambient10",
+      "sounds/mob/anomaly1/ambient11",
+      "sounds/mob/anomaly1/ambient12"
+    ]
+  },
+  "mob.m_anomaly3.ambient": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/anomaly1/ambient1",
+      "sounds/mob/anomaly1/ambient2",
+      "sounds/mob/anomaly1/ambient3",
+      "sounds/mob/anomaly1/ambient4",
+      "sounds/mob/anomaly1/ambient5",
+      "sounds/mob/anomaly1/ambient6",
+      "sounds/mob/anomaly1/ambient7",
+      "sounds/mob/anomaly1/ambient8",
+      "sounds/mob/anomaly1/ambient9",
+      "sounds/mob/anomaly1/ambient10",
+      "sounds/mob/anomaly1/ambient11",
+      "sounds/mob/anomaly1/ambient12"
+    ]
+  },
+  "mob.m_damanomaly.ambient": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/damanomaly/ambient1",
+      "sounds/mob/damanomaly/ambient2",
+      "sounds/mob/damanomaly/ambient3",
+      "sounds/mob/damanomaly/ambient4",
+      "sounds/mob/damanomaly/ambient5",
+      "sounds/mob/damanomaly/ambient6",
+      "sounds/mob/damanomaly/ambient7"
+    ]
+  },
+  "mob.m_amanomaly.ambient": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/anomaly1/ambient1",
+      "sounds/mob/anomaly1/ambient2",
+      "sounds/mob/anomaly1/ambient3",
+      "sounds/mob/anomaly1/ambient4",
+      "sounds/mob/anomaly1/ambient5",
+      "sounds/mob/anomaly1/ambient6",
+      "sounds/mob/anomaly1/ambient7",
+      "sounds/mob/anomaly1/ambient8",
+      "sounds/mob/anomaly1/ambient9",
+      "sounds/mob/anomaly1/ambient10",
+      "sounds/mob/anomaly1/ambient11",
+      "sounds/mob/anomaly1/ambient12"
+    ]
+  },
+  "mob.m_anomaly1.chase": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/anomaly1/chase1",
+      "sounds/mob/anomaly1/chase2",
+      "sounds/mob/anomaly1/chase3"
+    ]
+  },
+  "mob.m_anomaly2.chase ": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/anomaly1/chase1",
+      "sounds/mob/anomaly1/chase2",
+      "sounds/mob/anomaly1/chase3"
+    ]
+  },
+  "mob.m_anomaly3.chase": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/anomaly1/chase1",
+      "sounds/mob/anomaly1/chase2",
+      "sounds/mob/anomaly1/chase3"
+    ]
+  },
+  "mob.m_amanomaly.chase": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/anomaly1/chase1",
+      "sounds/mob/anomaly1/chase2",
+      "sounds/mob/anomaly1/chase3"
+    ]
+  },
+  "mob.m_damanomaly.chase": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/anomaly1/chase1",
+      "sounds/mob/anomaly1/chase2",
+      "sounds/mob/anomaly1/chase3"
+    ]
+  },
+  "mob.m_anomaly1.death": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/anomaly1/death1",
+      "sounds/mob/anomaly1/death2"
+    ]
+  },
+  "mob.m_anomaly2.death": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/anomaly1/death1",
+      "sounds/mob/anomaly1/death2"
+    ]
+  },
+  "mob.m_anomaly3.death": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/anomaly1/death1",
+      "sounds/mob/anomaly1/death2"
+    ]
+  },
+  "mob.m_amanomaly.death": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/anomaly1/death1",
+      "sounds/mob/anomaly1/death2"
+    ]
+  },
+  "mob.m_damanomaly.death": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/anomaly1/death1",
+      "sounds/mob/anomaly1/death2"
+    ]
+  },
+  "mob.m_h2.ambient": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/anomaly1/ambient1",
+      "sounds/mob/anomaly1/ambient2",
+      "sounds/mob/anomaly1/ambient3",
+      "sounds/mob/anomaly1/ambient4",
+      "sounds/mob/anomaly1/ambient5",
+      "sounds/mob/anomaly1/ambient6",
+      "sounds/mob/anomaly1/ambient7",
+      "sounds/mob/anomaly1/ambient8",
+      "sounds/mob/anomaly1/ambient9",
+      "sounds/mob/anomaly1/ambient10",
+      "sounds/mob/anomaly1/ambient11",
+      "sounds/mob/anomaly1/ambient12"
+    ]
+  },
+  "mob.m_hf.amiokay": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/amiokay/amiokay"
+    ]
+  },
+  "mob.m_hf.areyoualone": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/areyoualone/areyoualone"
+    ]
+  },
+  "mob.m_hf.begoneevil": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/begoneevil/begoneevil"
+    ]
+  },
+  "mob.m_hf.blessme": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/blessme/blessme"
+    ]
+  },
+  "mob.m_hf.block": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/block/blockbreak",
+      "sounds/mob/m_hf/block/blockplace"
+    ]
+  },
+  "mob.m_hf.callmeadmin": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/callmeadmin/callmeadmin"
+    ]
+  },
+  "mob.m_hf.deepslate": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/deepslate/deepslatebrake",
+      "sounds/mob/m_hf/deepslate/deepslateplace"
+    ]
+  },
+  "mob.m_hf.goingtokillmyself": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/goingtokillmyself/goingtokillmyself"
+    ]
+  },
+  "mob.m_hf.grass": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/grass/grasswalk",
+      "sounds/mob/m_hf/grass/grassrun"
+    ]
+  },
+  "mob.m_hf.hearingagain": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/hearingagain/hearingagain"
+    ]
+  },
+  "mob.m_hf.holyspiritamen": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/holyspiritamen/holyspiritamen"
+    ]
+  },
+  "mob.m_hf.ihearwhis": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/ihearwhis/ihearwhis"
+    ]
+  },
+  "mob.m_hf.insideurhead": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/insideurhead/insideurhead"
+    ]
+  },
+  "mob.m_hf.killmyself": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/killmyself/killmyself"
+    ]
+  },
+  "mob.m_hf.killsomeone": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/killsomeone/killsomeone"
+    ]
+  },
+  "mob.m_hf.killyourself": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/killyourself/killyourself"
+    ]
+  },
+  "mob.m_hf.leaveforsafe": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/leaveforsafe/leaveforsafe"
+    ]
+  },
+  "mob.m_hf.leavemealone": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/leavemealone/leavemealone"
+    ]
+  },
+  "mob.m_hf.lordnow": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/lordnow/lordnow"
+    ]
+  },
+  "mob.m_hf.mynameis": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/mynameis/mynameis"
+    ]
+  },
+  "mob.m_hf.nohope": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/nohope/nohope"
+    ]
+  },
+  "mob.m_hf.noone": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/noone/noone"
+    ]
+  },
+  "mob.m_hf.nosaveyou": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/nosaveyou/nosaveyou"
+    ]
+  },
+  "mob.m_hf.nothingrisk": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/nothingrisk/nothingrisk"
+    ]
+  },
+  "mob.m_hf.notseeme": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/notseeme/notseeme"
+    ]
+  },
+  "mob.m_hf.protectme": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/protectme/protectme"
+    ]
+  },
+  "mob.m_hf.protectus": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/protectus/protectus"
+    ]
+  },
+  "mob.m_hf.regretnothing": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/regretnothing/regretnothing"
+    ]
+  },
+  "mob.m_hf.refrain": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/refrain/refrain"
+    ]
+  },
+  "mob.m_hf.shake": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/shake/shake"
+    ]
+  },
+  "mob.m_hf.someonehack": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/someonehack/someonehack"
+    ]
+  },
+  "mob.m_hf.spotted": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/spotted/spotted1",
+      "sounds/mob/m_hf/spotted/spotted2",
+      "sounds/mob/m_hf/spotted/spotted3"
+    ]
+  },
+  "mob.m_hf.stopplease": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/stopplease/stopplease"
+    ]
+  },
+  "mob.m_hf.strangethreat": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/strangethreat/strangethreat"
+    ]
+  },
+  "mob.m_hf.thankyoulord": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/thankyoulord/thankyoulord"
+    ]
+  },
+  "mob.m_hf.trusttheman": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/trusttheman/trusttheman"
+    ]
+  },
+  "mob.m_hf.turnaround": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/turnaround/turnaround"
+    ]
+  },
+  "mob.m_hf.voiceswontstop": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/voiceswontstop/voiceswontstop"
+    ]
+  },
+  "mob.m_hf.wecometotellyou": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/wecometotellyou/wecometotellyou"
+    ]
+  },
+  "mob.m_hf.whisper": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/whisper/whisper1",
+      "sounds/mob/m_hf/whisper/whisper2",
+      "sounds/mob/m_hf/whisper/whisper3",
+      "sounds/mob/m_hf/whisper/whisper4",
+      "sounds/mob/m_hf/whisper/whisper5",
+      "sounds/mob/m_hf/whisper/whisper6",
+      "sounds/mob/m_hf/whisper/whisper7"
+    ]
+  },
+  "mob.m_hf.wontstop": {
+    "category": " neutral",
+    "sounds": [
+      "sounds/mob/m_hf/wontstop/wontstop"
+    ]
+  }
+}

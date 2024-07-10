@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "m:crucifix",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "crucifix",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

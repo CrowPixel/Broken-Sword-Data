@@ -1,0 +1,59 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "m:holywater",
+      "category": "nature"
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon": {
+        "texture": "holywater"
+      },
+      "minecraft:use_animation": "drink",
+      "minecraft:use_duration": 32,
+      "minecraft:food": {
+        "can_always_eat": true,
+        "effects": [
+          {
+            "name": "regeneration",
+            "chance": 1.0,
+            "duration": 30,
+            "amplifier": 1
+          },
+          {
+            "name": "resistance",
+            "chance": 1.0,
+            "duration": 10,
+            "amplifier": 1
+          },
+          {
+            "name": "saturation",
+            "chance": 1.0,
+            "duration": 30,
+            "amplifier": 1
+          }
+        ],
+        "remove_effects": [
+          "wither",
+          "weakness",
+          "slowness",
+          "poison",
+          "nausea",
+          "blindness",
+          "instant_damage",
+          "fatal_poison",
+          "hunger",
+          "bad_omen"
+        ],
+        "using_converts_to": "minecraft:glass_bottle"
+      },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.qt"
+      },
+      "minecraft:display_name": {
+        "value": "Holy Water"
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "You will go crazy...",
+    "name": "HALLUCINATION",
+    "uuid": "a9ee716d-1d20-4de2-a7a8-032d2d1a8486",
+    "version": [
+      0,
+      1,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      17,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "You will go crazy...",
+      "type": "resources",
+      "uuid": "2493698d-18ea-4f88-8777-5ea1f16ecd84",
+      "version": [
+        0,
+        1,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "81e8b3ca-b400-41e6-9e10-a96dd85a2f7b",
+      "version": [
+        0,
+        1,
+        0
+      ]
+    }
+  ]
+}

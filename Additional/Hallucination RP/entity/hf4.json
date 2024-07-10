@@ -1,0 +1,93 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "m:hf4",
+      "materials": {
+        "default": "m:hf4"
+      },
+      "textures": {
+        "default": "textures/entity/m_hf"
+      },
+      "geometry": {
+        "default": "geometry.m_hf"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+        ]
+      },
+      "animations": {
+        "look_at_target_default": "animation.m_hf.look_at_target.default",
+        "look_at_target_gliding": "animation.m_hf.look_at_target.gliding",
+        "look_at_target_swimming": "animation.m_hf.look_at_target.swimming",
+        "move": "animation.m_hf.move",
+        "riding.arms": "animation.m_hf.riding.arms",
+        "riding.legs": "animation.m_hf.riding.legs",
+        "holding": "animation.m_hf.holding",
+        "brandish_spear": "animation.m_hf.brandish_spear",
+        "charging": "animation.m_hf.charging",
+        "attack.rotations": "animation.m_hf.attack.rotations",
+        "sneaking": "animation.m_hf.sneaking",
+        "bob": "animation.m_hf.bob",
+        "damage_nearby_mobs": "animation.m_hf.damage_nearby_mobs",
+        "bow_and_arrow": "animation.m_hf.bow_and_arrow",
+        "swimming": "animation.m_hf.swimming",
+        "use_item_progress": "animation.m_hf.use_item_progress",
+        "skeleton_attack": "animation.m_hf.attack"
+      },
+      "animation_controllers": [
+        {
+          "look_at_target": "controller.animation.humanoid.look_at_target"
+        },
+        {
+          "move": "controller.animation.humanoid.move"
+        },
+        {
+          "riding": "controller.animation.humanoid.riding"
+        },
+        {
+          "holding": "controller.animation.humanoid.holding"
+        },
+        {
+          "brandish_spear": "controller.animation.humanoid.brandish_spear"
+        },
+        {
+          "charging": "controller.animation.humanoid.charging"
+        },
+        {
+          "attack": "controller.animation.humanoid.attack"
+        },
+        {
+          "sneaking": "controller.animation.humanoid.sneaking"
+        },
+        {
+          "bob": "controller.animation.humanoid.bob"
+        },
+        {
+          "damage_nearby_mobs": "controller.animation.humanoid.damage_nearby_mobs"
+        },
+        {
+          "bow_and_arrow": "controller.animation.humanoid.bow_and_arrow"
+        },
+        {
+          "swimming": "controller.animation.humanoid.swimming"
+        },
+        {
+          "use_item_progress": "controller.animation.humanoid.use_item_progress"
+        },
+        {
+          "skeleton_attack": "controller.animation.skeleton.attack"
+        }
+      ],
+      "spawn_egg": {
+        "base_color": "#000000",
+        "overlay_color": "#000000"
+      },
+      "render_controllers": [
+        "controller.render.skeleton"
+      ],
+      "enable_attachables": true
+    }
+  }
+}

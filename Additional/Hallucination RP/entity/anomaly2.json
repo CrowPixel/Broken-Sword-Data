@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "m:anomaly2",
+      "materials": {
+        "default": "entity_emissive"
+      },
+      "textures": {
+        "default": "textures/entity/anomaly2"
+      },
+      "geometry": {
+        "default": "geometry.m_anomaly2"
+      },
+      "spawn_egg": {
+        "base_color": "#000000",
+        "overlay_color": "#000000"
+      },
+      "animations": {
+        "walk_to_target": "animation.m_anomaly2.chase",
+        "attack": "animation.m_anomaly2.chase",
+        "flower": "animation.m_anomaly2.move1",
+        "look_at_target": "animation.m_anomaly2.idle",
+        "move_to_target": "animation.m_anomaly2.chase",
+        "move": "animation.m_anomaly2.idle",
+        "move_controller": "controller.animation.m_anomaly2.move",
+        "arm_controller": "controller.animation.m_aanomaly2.arm_movement",
+        "walk": "animation.m_anomaly2.move1"
+      },
+      "scripts": {
+        "animate": [
+          "look_at_target",
+          "move_controller",
+          "arm_controller"
+        ],
+        "pre_animation": [
+          "variable.modified_tcos0 = Math.clamp(((Math.cos(query.modified_distance_moved * 13.5) * Math.min(query.modified_move_speed, 0.6) / variable.gliding_speed_value) * 25.0), -12.5, 12.5);"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.iron_golem"
+      ]
+    }
+  }
+}

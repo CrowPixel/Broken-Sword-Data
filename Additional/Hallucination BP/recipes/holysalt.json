@@ -1,0 +1,19 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "tags": [
+      "furnace"
+    ],
+    "output": {
+      "item": "m:holysalt",
+      "data": 0
+    },
+    "input": {
+      "item": "minecraft:potion",
+      "data": 0
+    },
+    "description": {
+      "identifier": "recipes_eb71f8ee"
+    }
+  }
+}
