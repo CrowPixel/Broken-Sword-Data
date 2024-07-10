@@ -8,61 +8,6 @@
 			"is_experimental": false
 		},
 		"component_groups": {
-			"minecraft:look_to_start_drowned_transformation": {
-				"minecraft:environment_sensor": {
-					"triggers": {
-						"filters": {
-							"test": "is_underwater",
-							"subject": "self",
-							"operator": "==",
-							"value": true
-						},
-						"event": "minecraft:start_transforming"
-					}
-				}
-			},
-			"minecraft:start_drowned_transformation": {
-				"minecraft:environment_sensor": {
-					"triggers": {
-						"filters": {
-							"test": "is_underwater",
-							"subject": "self",
-							"operator": "==",
-							"value": false
-						},
-						"event": "minecraft:stop_transforming"
-					}
-				},
-				"minecraft:timer": {
-					"looping": false,
-					"time": 30,
-					"time_down_event": {
-						"event": "minecraft:convert_to_drowned"
-					}
-				}
-			},
-			"minecraft:convert_to_drowned": {
-				"minecraft:transformation": {
-					"into": "minecraft:drowned<minecraft:as_adult>",
-					"transformation_sound": "convert_to_drowned",
-					"drop_equipment": true,
-					"delay": {
-						"value": 15
-					}
-				},
-				"minecraft:is_shaking": {}
-			},
-			"minecraft:convert_to_baby_drowned": {
-				"minecraft:transformation": {
-					"into": "minecraft:drowned<minecraft:as_baby>",
-					"transformation_sound": "convert_to_drowned",
-					"drop_equipment": true,
-					"delay": {
-						"value": 15
-					}
-				},
-				"minecraft:is_shaking": {}
-			},
 			"minecraft:zombie_baby": {
 				"minecraft:experience_reward": {
 					"on_death": "query.last_hit_by_player ? 12 + (query.equipment_count * Math.Random(1,3)) : 0"
@@ -121,7 +66,6 @@
 				"width": 0.6,
 				"height": 1.9
 			},
-			"minecraft:burns_in_daylight": {},
 			"minecraft:movement.basic": {},
 			"minecraft:navigation.walk": {
 				"is_amphibious": true,
@@ -129,7 +73,6 @@
 				"can_walk": true,
 				"can_break_doors": true
 			},
-			"minecraft:annotation.break_door": {},
 			"minecraft:jump.static": {},
 			"minecraft:can_climb": {},
 			"minecraft:health": {
@@ -392,10 +335,6 @@
 			"minecraft:behavior.hurt_by": {
 				"priority": 1
 			},
-			"minecraft:behavior.vex_random_move": {
-				"priority": 3,
-				"speed_multiplier": 0.3
-			},
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 2,
 				"must_see": true,
@@ -421,22 +360,8 @@
 				"must_see": true,
 				"search_radius": 16
 			},
-			"minecraft:behavior.vex_charge_attack": {
-				"priority": 3
-			},
 			"minecraft:behavior.float": {
 				"priority": 1
-			},
-			"minecraft:damage_sensor": {
-				"triggers": {
-					"filters": {
-						"test": "is_drowned",
-						"subject": "self",
-						"operator": "==",
-						"value": true
-					},
-					"event": "minecraft:convert_to_drowned"
-				}
 			},
 			"minecraft:sound_effects": {
 				"damage_sound": "random.hurt",
