@@ -168,7 +168,7 @@
 				}
 			}
 		},
-		"animation.gord_the_fallen.walk": {
+		"animation.gord_the_fallen.gallop": {
 			"loop": true,
 			"animation_length": 2.5,
 			"bones": {
