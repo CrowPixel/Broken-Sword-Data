@@ -38,7 +38,7 @@
         ]
       },
       "minecraft:movement": {
-        "value": 0.16
+        "value": 0.3
       },
       "minecraft:annotation.open_door": {},
       "minecraft:navigation.climb": {
@@ -64,7 +64,7 @@
         "track_target": true,
         "attack_duration":1.25,
         "hit_delay_pct":0.6,
-        "speed_multiplier": 0.1
+        "speed_multiplier": 0.5
       },
       "minecraft:behavior.move_towards_target": {
         "priority": 2,
