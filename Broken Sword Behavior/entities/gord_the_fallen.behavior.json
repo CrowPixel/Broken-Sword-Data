@@ -144,9 +144,6 @@
         "priority": 2,
         "speed_multiplier": 1
       },
-      "minecraft:fall_damage": {
-        "value": 0
-      },
       "minecraft:on_target_acquired": {
         "event": "on:target_acquired",
         "target": "self"
