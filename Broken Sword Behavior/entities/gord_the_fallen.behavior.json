@@ -75,9 +75,6 @@
         "speed_multiplier": 1,
         "within_radius": 256
       },
-      "minecraft:behavior.offer_flower": {
-        "priority": 5
-      },
       "minecraft:behavior.random_stroll": {
         "priority": 6,
         "speed_multiplier": 0,
@@ -127,13 +124,13 @@
       },
       "minecraft:conditional_bandwidth_optimization": {},
       "minecraft:experience_reward": {
-        "on_death": "query.last_hit_by_player ? 0 : 0"
+        "on_death": "query.last_hit_by_player ? 100 : 100"
       },
       "minecraft:underwater_movement": {
         "value": 0.25
       },
       "minecraft:scale": {
-        "value": 1
+        "value": 1.2
       },
       "minecraft:breathable": {
         "breathesWater": true,
@@ -153,30 +150,6 @@
       "minecraft:on_target_acquired": {
         "event": "on:target_acquired",
         "target": "self"
-      },
-      "minecraft:timer": {
-        "looping": true,
-        "time": 120,
-        "time_down_event": {
-          "event": "on:tick_action"
-        }
-      },
-      "minecraft:lookat": {
-        "search_radius": 128.0,
-        "set_target": true,
-        "look_cooldown": [
-          1,
-          1
-        ],
-        "filters": {
-          "all_of": [
-            {
-              "subject": "other",
-              "test": "is_family",
-              "value": "player"
-            }
-          ]
-        }
       },
       "minecraft:break_blocks": {
         "breakable_blocks": [
@@ -210,24 +183,9 @@
         }
       },
       "on:target_acquired": {
-        "randomize": [
-          {
-            "run_command": {
-              "command": [
-                "function anomaly2spot1"
-              ]
-            },
-            "weight": 2
-          },
-          {
-            "run_command": {
-              "command": [
-                "function anomaly2spot2"
-              ]
-            },
-            "weight": 1
-          }
-        ]
+        "run_command": {
+          "command": []
+        }
       },
       "on:target_escape": {
         "run_command": {
@@ -241,9 +199,7 @@
       },
       "on:tick_action": {
         "run_command": {
-          "command": [
-            "tp @e[type=m:anomaly2] ~ -65 ~"
-          ]
+          "command": []
         }
       }
     }
