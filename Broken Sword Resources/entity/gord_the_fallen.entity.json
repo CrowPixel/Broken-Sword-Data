@@ -17,15 +17,15 @@
 				"texture": "gord_the_fallen_spawn_egg"
 			},
 			"scripts": {
-				"pre_animation": ["variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"],
-				"animate":[
-					"bob",
+				"animate": [
+					"idle",
 					"main_controller"
-				]
+				],
+				"pre_animation": ["variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"]
 			},
 			"animations": {
 				"move": "animation.gord_the_fallen.gallop",
-				"bob": "animation.gord_the_fallen.idle",
+				"idle": "animation.gord_the_fallen.idle",
 				"zombie_attack_bare_hand": "animation.gord_the_fallen.swing",
 				"main_controller": "controller.animation.gord_the_fallen.base"
 			},

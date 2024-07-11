@@ -5,8 +5,8 @@
 			"states": {
 				"default": {
 					"animations": [
-						"idle",
-						{"gallop": "query.ground_speed>=0.5"}
+						"animation.gord_the_fallen.idle",
+						{"animation.gord_the_fallen.gallop": "query.ground_speed>=0.5"}
 					],
 					"transitions": [
 						{"attack": "query.is_delayed_attacking"}
@@ -14,7 +14,7 @@
 					"blend_transition": 0.2
 				},
 				"attack": {
-					"animations": ["swing"],
+					"animations": ["animation.gord_the_fallen.swing"],
 					"transitions": [
 						{"default": "query.all_animations_finished"}
 					],
