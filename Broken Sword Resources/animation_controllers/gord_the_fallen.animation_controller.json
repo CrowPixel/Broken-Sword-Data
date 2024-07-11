@@ -9,7 +9,7 @@
 						{"gallop": "query.ground_speed>=0.5"}
 					],
 					"transitions": [
-						{"attack": "query.is_attacking"}
+						{"attack": "query.is_delayed_attacking"}
 					],
 					"blend_transition": 0.2
 				},

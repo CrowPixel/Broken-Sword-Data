@@ -38,7 +38,7 @@
         ]
       },
       "minecraft:movement": {
-        "value": 0.64
+        "value": 0.16
       },
       "minecraft:annotation.open_door": {},
       "minecraft:navigation.climb": {
@@ -55,20 +55,16 @@
       "minecraft:attack": {
         "damage": 12
       },
-      "minecraft:damage_sensor": [
-        {
-          "cause": "fall",
-          "deals_damage": false
-        }
-      ],
       "minecraft:knockback_resistance": {
-        "value": 1.0,
+        "value": 0.7,
         "max": 1.0
       },
-      "minecraft:behavior.melee_attack": {
+      "minecraft:behavior.delayed_attack": {
         "priority": 1,
         "track_target": true,
-        "speed_multiplier": 1
+        "attack_duration":1.25,
+        "hit_delay_pct":0.6,
+        "speed_multiplier": 0.1
       },
       "minecraft:behavior.move_towards_target": {
         "priority": 2,
@@ -77,8 +73,8 @@
       },
       "minecraft:behavior.random_stroll": {
         "priority": 6,
-        "speed_multiplier": 0,
-        "xz_dist": 0
+        "speed_multiplier": 0.5,
+        "xz_dist": 5
       },
       "minecraft:behavior.look_at_player": {
         "priority": 7,
@@ -139,7 +135,7 @@
         "generatesBubbles": true,
         "breathesAir": true
       },
-      "minecraft:fire_immune": true,
+      "minecraft:fire_immune": false,
       "minecraft:behavior.float": {
         "priority": 2,
         "speed_multiplier": 1
@@ -161,7 +157,7 @@
     "events": {
       "on:death": {
         "run_command": {
-          "command": []
+          "command": ["say Gord The Fallen has been slain by @p..."]
         }
       },
       "on:hurt": {

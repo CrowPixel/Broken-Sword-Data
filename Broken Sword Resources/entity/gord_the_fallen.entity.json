@@ -21,7 +21,7 @@
 			},
 			"animations": {
 				"move": "animation.gord_the_fallen.gallop",
-				"bob": "animation.humanoid.bob",
+				"bob": "animation.gord_the_fallen.idle",
 				"zombie_attack_bare_hand": "animation.gord_the_fallen.swing"
 			},
 			"animation_controllers": [
