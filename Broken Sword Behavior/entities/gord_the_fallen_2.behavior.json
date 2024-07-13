@@ -20,8 +20,8 @@
         "width": 0.7
       },
       "minecraft:health": {
-        "value": 50,
-        "max": 50
+        "value": 75,
+        "max": 75
       },
       "minecraft:boss": {
         "should_darken_sky": true,

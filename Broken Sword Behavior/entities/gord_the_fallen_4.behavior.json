@@ -20,8 +20,8 @@
           "width": 0.7
         },
         "minecraft:health": {
-          "value": 50,
-          "max": 50
+          "value": 125,
+          "max": 125
         },
         "minecraft:boss": {
           "should_darken_sky": true,
@@ -165,7 +165,7 @@
       "events":{
         "on:next_phase": {
           "run_command":{
-            "command":["summon boss:gord_kneeling"]
+            "command":["summon boss:gord_kneeling ~ ~ ~ facing @p[tag=player]"]
         }
       }
     }
