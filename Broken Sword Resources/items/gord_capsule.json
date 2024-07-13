@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+      "description": {
+        "identifier": "bsword:gord_capsule",
+        "category": "items"
+      },
+      "components": {
+        "minecraft:icon": "gord_capsule",
+        "minecraft:render_offsets": "miscellaneous"
+      }
+    }
+  }
