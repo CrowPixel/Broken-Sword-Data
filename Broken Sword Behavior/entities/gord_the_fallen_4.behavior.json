@@ -1,0 +1,172 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "boss:gord_the_fallen_4",
+        "is_spawnable": true,
+        "is_summonable": true,
+        "is_experimental": false,
+        "runtime_identifier": "boss:gord_the_fallen_4"
+      },
+      "components": {
+        "minecraft:is_hidden_when_invisible": {},
+        "minecraft:type_family": {
+          "family": [
+            "boss"
+          ]
+        },
+        "minecraft:collision_box": {
+          "height": 2.3,
+          "width": 0.7
+        },
+        "minecraft:health": {
+          "value": 50,
+          "max": 50
+        },
+        "minecraft:boss": {
+          "should_darken_sky": true,
+          "hud_range": 55
+        },
+        "minecraft:hurt_on_condition": {
+          "damage_conditions": [
+            {
+              "filters": {
+                "test": "in_lava",
+                "subject": "self",
+                "operator": "==",
+                "value": true
+              },
+              "cause": "lava",
+              "damage_per_tick": 4
+            }
+          ]
+        },
+        "minecraft:movement": {
+          "value": 0.23
+        },
+        "minecraft:annotation.open_door": {},
+        "minecraft:navigation.climb": {
+          "can_path_over_water": true,
+          "can_pass_doors": true,
+          "can_open_doors": true,
+          "can_walk": true,
+          "avoid_water": false,
+          "avoid_damage_blocks": false
+        },
+        "minecraft:movement.basic": {},
+        "minecraft:jump.static": {},
+        "minecraft:can_climb": {},
+        "minecraft:attack": {
+          "damage": 5
+        },
+        "minecraft:knockback_resistance": {
+          "value": 0.7,
+          "max": 1.0
+        },
+        "minecraft:behavior.delayed_attack": {
+          "priority": 1,
+          "track_target": true,
+          "attack_duration":1.25,
+          "hit_delay_pct":0.6,
+          "reach_multiplier": 2
+        },
+        "minecraft:behavior.move_towards_target": {
+          "priority": 2,
+          "within_radius": 256
+        },
+        "minecraft:behavior.random_stroll": {
+          "priority": 6,
+          "speed_multiplier": 1,
+          "xz_dist": 5
+        },
+        "minecraft:behavior.look_at_player": {
+          "priority": 7,
+          "look_distance": 128,
+          "probability": 100
+        },
+        "minecraft:behavior.random_look_around": {
+          "priority": 8
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 3,
+          "must_reach": false,
+          "must_see": false,
+          "must_see_forget_duration": 500,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "must_see": false,
+              "max_dist": 16
+            }
+          ],
+          "within_radius": 150
+        },
+        "minecraft:behavior.hurt_by_target": {
+          "priority": 3
+        },
+        "minecraft:persistent": {},
+        "minecraft:physics": {},
+        "minecraft:pushable": {
+          "is_pushable": true,
+          "is_pushable_by_piston": true
+        },
+        "minecraft:follow_range": {
+          "value": 256
+        },
+        "minecraft:conditional_bandwidth_optimization": {},
+        "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? 0 : 0"
+        },
+        "minecraft:underwater_movement": {
+          "value": 0.25
+        },
+        "minecraft:scale": {
+          "value": 1.2
+        },
+        "minecraft:breathable": {
+          "breathesWater": true,
+          "totalSupply": 9999999,
+          "suffocateTime": -1,
+          "generatesBubbles": true,
+          "breathesAir": true
+        },
+        "minecraft:fire_immune": false,
+        "minecraft:behavior.float": {
+          "priority": 2,
+          "speed_multiplier": 1
+        },
+        "minecraft:on_target_acquired": {
+          "event": "on:target_acquired",
+          "target": "self"
+        },
+        "minecraft:on_death": {
+          "event": "on:death",
+          "target": "self"
+        },
+        "minecraft:break_blocks": {
+          "breakable_blocks": [
+            "tinted_glass",
+            "glass",
+            "glass_pane",
+            "stained_glass",
+            "stained_glass_pane"
+          ]
+        }
+      },
+        "minecraft:on_death": {
+            "event": {
+              "run_command":{
+                "command":"summon boss:gord_kneeling"
+                      }
+                  }
+              }
+          }
+      }

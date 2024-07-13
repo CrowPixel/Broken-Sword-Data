@@ -2,11 +2,11 @@
   "format_version": "1.13.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "boss:gord_the_fallen",
+      "identifier": "boss:gord_the_fallen_2",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false,
-      "runtime_identifier": "boss:gord_the_fallen"
+      "runtime_identifier": "boss:gord_the_fallen_2"
     },
     "components": {
       "minecraft:is_hidden_when_invisible": {},
@@ -20,8 +20,8 @@
         "width": 0.7
       },
       "minecraft:health": {
-        "value": 100,
-        "max": 100
+        "value": 25,
+        "max": 25
       },
       "minecraft:boss": {
         "should_darken_sky": true,
@@ -161,86 +161,12 @@
         ]
       }
     },
-    "events": {
-      "check_health_75": {
-          "minecraft:on_hurt": {
-              "filters": {
-                  "all_of": [
-                      {
-                          "test": "has_component",
-                          "subject": "self",
-                          "component": "minecraft:health"
-                      },
-                      {
-                          "test": "has_health",
-                          "subject": "self",
-                          "amount": 75,
-                          "comparison": "<="
-                      }
-                  ]
-              },
-              "event": {
-                "run_command":{
-                  "command":"tag add @e[type=boss:gord_the_fallen] 75_health"
-                }
-              }
-          }
-      },
-      "check_health_50": {
-          "minecraft:on_hurt": {
-              "filters": {
-                  "all_of": [
-                      {
-                          "test": "has_component",
-                          "subject": "self",
-                          "component": "minecraft:health"
-                      },
-                      {
-                          "test": "has_health",
-                          "subject": "self",
-                          "amount": 50,
-                          "comparison": "<="
-                      }
-                  ]
-              },
-              "event": {
-                "run_command":{
-                  "command":"tag add @e[type=boss:gord_the_fallen] 50_health"
-                }
-              }
-          }
-      },
-      "check_health_25": {
-          "minecraft:on_hurt": {
-              "filters": {
-                  "all_of": [
-                      {
-                          "test": "has_component",
-                          "subject": "self",
-                          "component": "minecraft:health"
-                      },
-                      {
-                          "test": "has_health",
-                          "subject": "self",
-                          "amount": 25,
-                          "comparison": "<="
-                      }
-                  ]
-              },
-              "event": {
-                "run_command":{
-                  "command":"say tag add @e[type=boss:gord_the_fallen] 25_health"
-                }
-              }
-          }
-      },
       "minecraft:on_death": {
           "event": {
             "run_command":{
-              "command":"summon boss:gord_kneeling"
+              "command":"function gord2"
                     }
                 }
             }
         }
     }
-}

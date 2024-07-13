@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "boss:gord_the_fallen_3",
+			"min_engine_version": "1.10.0",
+			"materials": {
+				"default": "zombie"
+			},
+			"textures": {
+				"default": "textures/entity/gord_the_fallen"
+			},
+			"geometry": {
+				"default": "geometry.gord_the_fallen"
+			}
+			},
+			"scripts": {
+				"animate": [
+					"idle",
+					"main_controller"
+				],
+				"pre_animation": ["variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"]
+			},
+			"animations": {
+				"gallop": "animation.gord_the_fallen.gallop",
+				"idle": "animation.gord_the_fallen.idle",
+				"swing": "animation.gord_the_fallen.swing",
+				"main_controller": "controller.animation.gord_the_fallen.base"
+			},
+			"render_controllers": ["controller.render.default"],
+			"enable_attachables": true
+		}
+	}
