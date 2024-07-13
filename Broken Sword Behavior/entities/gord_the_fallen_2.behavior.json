@@ -20,8 +20,8 @@
         "width": 0.7
       },
       "minecraft:health": {
-        "value": 25,
-        "max": 25
+        "value": 50,
+        "max": 50
       },
       "minecraft:boss": {
         "should_darken_sky": true,
@@ -58,7 +58,7 @@
       "minecraft:jump.static": {},
       "minecraft:can_climb": {},
       "minecraft:attack": {
-        "damage": 5
+        "damage": 6
       },
       "minecraft:knockback_resistance": {
         "value": 0.7,
@@ -149,7 +149,7 @@
         "target": "self"
       },
       "minecraft:on_death": {
-        "event": "on:death",
+        "event": "on:next_phase",
         "target": "self"
       },
       "minecraft:break_blocks": {
@@ -162,12 +162,12 @@
         ]
       }
     },
-      "on:death": {
-          "event": {
-            "run_command":{
-              "command":"function gord2"
-                    }
-                }
-            }
+    "events":{
+      "on:next_phase": {
+        "run_command":{
+          "command":["function gord2"]
         }
+      }
     }
+  }
+}

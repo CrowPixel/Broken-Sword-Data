@@ -20,8 +20,8 @@
         "width": 0.7
       },
       "minecraft:health": {
-        "value": 25,
-        "max": 25
+        "value": 50,
+        "max": 50
       },
       "minecraft:boss": {
         "should_darken_sky": true,
@@ -148,19 +148,9 @@
         "event": "on:target_acquired",
         "target": "self"
       },
-      "minecraft:on_hurt": {
-        "filters":{
-          "any_of":[
-            {
-              "test": "actor_health",
-              "subject": "self",
-              "operator": "equals",
-              "value": "0"
-            }
-          ]
-        },
-        "event":"on:death",
-        "target":"self"
+      "minecraft:on_death": {
+        "event": "on:next_phase",
+        "target": "self"
       },
       "minecraft:break_blocks": {
         "breakable_blocks": [
@@ -172,12 +162,12 @@
         ]
       }
     },
-      "on:death": {
-          "event": {
-            "run_command":{
-              "command":"function gord1"
-                    }
-                }
-            }
+    "events":{
+      "on:next_phase": {
+        "run_command":{
+          "command":["function gord1"]
         }
+      }
     }
+  }
+}

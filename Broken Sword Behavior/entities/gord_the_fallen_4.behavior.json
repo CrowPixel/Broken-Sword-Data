@@ -58,7 +58,7 @@
         "minecraft:jump.static": {},
         "minecraft:can_climb": {},
         "minecraft:attack": {
-          "damage": 5
+          "damage": 8
         },
         "minecraft:knockback_resistance": {
           "value": 0.7,
@@ -149,7 +149,7 @@
           "target": "self"
         },
         "minecraft:on_death": {
-          "event": "on:death",
+          "event": "on:next_phase",
           "target": "self"
         },
         "minecraft:break_blocks": {
@@ -162,12 +162,12 @@
           ]
         }
       },
-        "on:death": {
-            "event": {
-              "run_command":{
-                "command":"summon boss:gord_kneeling"
-                      }
-                  }
-              }
-          }
+      "events":{
+        "on:next_phase": {
+          "run_command":{
+            "command":["summon boss:gord_kneeling"]
+        }
       }
+    }
+  }
+}
