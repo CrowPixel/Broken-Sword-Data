@@ -2,11 +2,11 @@
     "format_version": "1.13.0",
     "minecraft:entity": {
       "description": {
-        "identifier": "boss:gord_the_fallen_4",
+        "identifier": "bsword:gord_the_fallen_4",
         "is_spawnable": true,
         "is_summonable": true,
         "is_experimental": false,
-        "runtime_identifier": "boss:gord_the_fallen_4"
+        "runtime_identifier": "bsword:gord_the_fallen_4"
       },
       "components": {
         "minecraft:is_hidden_when_invisible": {},
@@ -165,7 +165,7 @@
       "events":{
         "on:next_phase": {
           "run_command":{
-            "command":["summon boss:gord_kneeling ~ ~ ~ facing @p[tag=player]"]
+            "command":["summon bsword:gord_kneeling ~ ~ ~ facing @p[tag=player]"]
         }
       }
     }

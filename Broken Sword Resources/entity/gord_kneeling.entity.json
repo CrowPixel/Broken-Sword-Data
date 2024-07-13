@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "boss:gord_kneeling",
+			"identifier": "bsword:gord_kneeling",
 			"min_engine_version": "1.10.0",
 			"materials": {
 				"default": "zombie"

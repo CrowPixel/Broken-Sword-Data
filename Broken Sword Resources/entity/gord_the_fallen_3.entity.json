@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "boss:gord_the_fallen_3",
+			"identifier": "bsword:gord_the_fallen_3",
 			"min_engine_version": "1.10.0",
 			"materials": {
 				"default": "zombie"
