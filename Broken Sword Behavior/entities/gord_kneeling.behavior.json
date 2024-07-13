@@ -2,11 +2,11 @@
   "format_version": "1.13.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "boss:gord_the_fallen",
-      "is_spawnable": true,
+      "identifier": "boss:gord_kneeling",
+      "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false,
-      "runtime_identifier": "boss:gord_the_fallen"
+      "runtime_identifier": "boss:gord_kneeling"
     },
     "components": {
       "minecraft:is_hidden_when_invisible": {},
@@ -16,7 +16,7 @@
         ]
       },
       "minecraft:collision_box": {
-        "height": 2.3,
+        "height": 1.4,
         "width": 0.7
       },
       "minecraft:health": {
@@ -38,90 +38,39 @@
         ]
       },
       "minecraft:movement": {
-        "value": 0.6
+        "value": 0.0
       },
       "minecraft:annotation.open_door": {},
       "minecraft:navigation.climb": {
         "can_path_over_water": true,
         "can_pass_doors": true,
         "can_open_doors": true,
-        "can_walk": true,
+        "can_walk": false,
         "avoid_water": false,
         "avoid_damage_blocks": false
       },
-      "minecraft:movement.basic": {},
-      "minecraft:jump.static": {},
       "minecraft:can_climb": {},
       "minecraft:attack": {
-        "damage": 5
+        "damage": 0
       },
       "minecraft:knockback_resistance": {
-        "value": 0.7,
+        "value": 1.0,
         "max": 1.0
-      },
-      "minecraft:behavior.delayed_attack": {
-        "priority": 1,
-        "track_target": true,
-        "attack_duration":1.25,
-        "hit_delay_pct":0.6,
-        "speed_multiplier": 1,
-        "reach_multiplier": 2
-      },
-      "minecraft:behavior.move_towards_target": {
-        "priority": 2,
-        "speed_multiplier": 1.75,
-        "within_radius": 256
-      },
-      "minecraft:behavior.random_stroll": {
-        "priority": 6,
-        "speed_multiplier": 1,
-        "xz_dist": 5
       },
       "minecraft:behavior.look_at_player": {
         "priority": 7,
         "look_distance": 128,
         "probability": 100
       },
-      "minecraft:behavior.random_look_around": {
-        "priority": 8
-      },
-      "minecraft:behavior.nearest_attackable_target": {
-        "priority": 3,
-        "must_reach": false,
-        "must_see": false,
-        "must_see_forget_duration": 500,
-        "entity_types": [
-          {
-            "filters": {
-              "any_of": [
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "player"
-                }
-              ]
-            },
-            "must_see": false,
-            "max_dist": 16
-          }
-        ],
-        "within_radius": 150
-      },
-      "minecraft:behavior.hurt_by_target": {
-        "priority": 3
-      },
       "minecraft:persistent": {},
       "minecraft:physics": {},
       "minecraft:pushable": {
-        "is_pushable": true,
-        "is_pushable_by_piston": true
-      },
-      "minecraft:follow_range": {
-        "value": 256
+        "is_pushable": false,
+        "is_pushable_by_piston": false
       },
       "minecraft:conditional_bandwidth_optimization": {},
       "minecraft:experience_reward": {
-        "on_death": "query.last_hit_by_player ? 100 : 100"
+        "on_death": "query.last_hit_by_player ? 0 : 0"
       },
       "minecraft:underwater_movement": {
         "value": 0.25
@@ -136,7 +85,7 @@
         "generatesBubbles": true,
         "breathesAir": true
       },
-      "minecraft:fire_immune": false,
+      "minecraft:fire_immune": true,
       "minecraft:behavior.float": {
         "priority": 2,
         "speed_multiplier": 1
@@ -162,7 +111,7 @@
     "events": {
       "on:death": {
         "run_command": {
-          "command": ["summon boss:gord_kneeling"]
+          "command": ["tellraw Gord The Fallen has been slain by @p..."]
         }
       },
       "on:hurt": {

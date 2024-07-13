@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "boss:gord_the_fallen",
+			"identifier": "boss:gord_kneeling",
 			"min_engine_version": "1.10.0",
 			"materials": {
 				"default": "zombie"
@@ -18,16 +18,12 @@
 			},
 			"scripts": {
 				"animate": [
-					"idle",
-					"main_controller"
+					"kneel"
 				],
 				"pre_animation": ["variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"]
 			},
 			"animations": {
-				"gallop": "animation.gord_the_fallen.gallop",
-				"idle": "animation.gord_the_fallen.idle",
-				"swing": "animation.gord_the_fallen.swing",
-				"main_controller": "controller.animation.gord_the_fallen.base"
+				"kneel": "animation.gord_the_fallen.kneel"
 			},
 			"render_controllers": ["controller.render.default"],
 			"enable_attachables": true
