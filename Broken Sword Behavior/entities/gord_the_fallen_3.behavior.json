@@ -25,7 +25,8 @@
         },
         "minecraft:boss": {
           "should_darken_sky": true,
-          "hud_range": 55
+          "hud_range": 55,
+          "name":"Gord The Fallen"
         },
         "minecraft:hurt_on_condition": {
           "damage_conditions": [

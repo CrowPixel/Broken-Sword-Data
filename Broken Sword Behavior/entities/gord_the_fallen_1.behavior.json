@@ -25,7 +25,8 @@
       },
       "minecraft:boss": {
         "should_darken_sky": true,
-        "hud_range": 55
+        "hud_range": 55,
+        "name":"Gord The Fallen"
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -147,9 +148,19 @@
         "event": "on:target_acquired",
         "target": "self"
       },
-      "minecraft:on_death": {
-        "event": "on:death",
-        "target": "self"
+      "minecraft:on_hurt": {
+        "filters":{
+          "any_of":[
+            {
+              "test": "actor_health",
+              "subject": "self",
+              "operator": "equals",
+              "value": "0"
+            }
+          ]
+        },
+        "event":"on:death",
+        "target":"self"
       },
       "minecraft:break_blocks": {
         "breakable_blocks": [
