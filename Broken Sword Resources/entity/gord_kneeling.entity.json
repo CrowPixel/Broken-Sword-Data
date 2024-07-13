@@ -13,9 +13,6 @@
 			"geometry": {
 				"default": "geometry.gord_the_fallen"
 			},
-			"spawn_egg": {
-				"texture": "gord_the_fallen_spawn_egg"
-			},
 			"scripts": {
 				"animate": [
 					"kneel"

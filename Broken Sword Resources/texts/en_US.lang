@@ -1,2 +1,3 @@
-entity.jaffajace:gord_the_fallen.name=Gord The Fallen
-item.spawn_egg.entity.jaffajace:gord_the_fallen.name=Spawn Gord The Fallen
+entity.boss:gord_the_fallen.name=Gord The Fallen
+item.spawn_egg.entity.boss:gord_the_fallen.name=Spawn Gord The Fallen
+entity.boss:gord_kneeling.name=Gord The Fallen Kneeled

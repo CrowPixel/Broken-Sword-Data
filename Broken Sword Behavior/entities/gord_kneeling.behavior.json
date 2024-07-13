@@ -9,6 +9,14 @@
       "runtime_identifier": "boss:gord_kneeling"
     },
     "components": {
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause":"none",
+            "damage_multiplier":0.0
+          }
+        ]
+      },
       "minecraft:is_hidden_when_invisible": {},
       "minecraft:type_family": {
         "family": [
@@ -16,8 +24,8 @@
         ]
       },
       "minecraft:collision_box": {
-        "height": 1.4,
-        "width": 0.7
+        "height": 0.0,
+        "width": 0.0
       },
       "minecraft:health": {
         "value": 100,
@@ -40,6 +48,7 @@
       "minecraft:movement": {
         "value": 0.0
       },
+      
       "minecraft:annotation.open_door": {},
       "minecraft:navigation.climb": {
         "can_path_over_water": true,
@@ -111,7 +120,7 @@
     "events": {
       "on:death": {
         "run_command": {
-          "command": ["tellraw Gord The Fallen has been slain by @p..."]
+          "command": ["tellraw {\"rawtext:[{\"text\":\"Gord The Fallen has been slain by @p...\"}]}"]
         }
       },
       "on:hurt": {
