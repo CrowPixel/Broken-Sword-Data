@@ -161,7 +161,7 @@
         ]
       }
     },
-      "minecraft:on_death": {
+      "on:death": {
           "event": {
             "run_command":{
               "command":"function gord1"

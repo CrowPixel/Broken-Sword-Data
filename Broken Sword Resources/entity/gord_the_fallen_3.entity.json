@@ -12,7 +12,6 @@
 			},
 			"geometry": {
 				"default": "geometry.gord_the_fallen"
-			}
 			},
 			"scripts": {
 				"animate": [
@@ -31,3 +30,4 @@
 			"enable_attachables": true
 		}
 	}
+}
