@@ -57,7 +57,7 @@
                     "only_once": true
                 }
             },
-"low_health_100_trigger": {
+			"low_health_100_trigger": {
                 "minecraft:behavior.run_command": {
                     "priority": 0,
                     "command": "say My health is now 100!",
@@ -110,5 +110,8 @@
             "initialize": {
                 "add": {
                     "component_groups": ["health_check"]
+				}
+			}
+		}
 	}
 }
