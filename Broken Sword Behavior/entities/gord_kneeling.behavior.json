@@ -116,48 +116,6 @@
           "stained_glass_pane"
         ]
       }
-    },
-    "events": {
-      "on:death": {
-        "run_command": {
-          "command": ["tellraw {\"rawtext:[{\"text\":\"Gord The Fallen has been slain by @p...\"}]}"]
-        }
-      },
-      "on:hurt": {
-        "run_command": {
-          "command": []
-        }
-      },
-      "on:hurt_by_player": {
-        "run_command": {
-          "command": []
-        }
-      },
-      "on:ignite": {
-        "run_command": {
-          "command": []
-        }
-      },
-      "on:target_acquired": {
-        "run_command": {
-          "command": []
-        }
-      },
-      "on:target_escape": {
-        "run_command": {
-          "command": []
-        }
-      },
-      "on:wake_with_owner": {
-        "run_command": {
-          "command": []
-        }
-      },
-      "on:tick_action": {
-        "run_command": {
-          "command": []
-        }
-      }
     }
   }
 }
