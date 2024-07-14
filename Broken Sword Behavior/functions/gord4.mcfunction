@@ -1,4 +1,5 @@
 summon bsword:gord_kneeling ~ ~ ~ facing @p[tag=player]
-kill @e[type=zombie, type=skeleton]
-xp @a[tag=player] 100
+kill @e[type=zombie]
+kill @e[type=skeleton]
+xp 100 @a[tag=player]
 say This.. cannot be...
