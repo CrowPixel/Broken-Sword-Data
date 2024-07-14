@@ -165,7 +165,7 @@
       "events":{
         "on:next_phase": {
           "run_command":{
-            "command":["summon bsword:gord_kneeling ~ ~ ~ facing @p[tag=player]"]
+            "command":["function gord4"]
         }
       }
     }
