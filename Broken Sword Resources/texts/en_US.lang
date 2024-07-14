@@ -1,7 +1,7 @@
-entity.boss:gord_the_fallen.name=Gord The Fallen
-item.spawn_egg.entity.boss:gord_the_fallen.name=Spawn Gord The Fallen
-entity.boss:gord_kneeling.name=Gord The Fallen Kneeled
-entity.boss:gord_the_fallen_2.name=Gord The Fallen Phase 2
-entity.boss:gord_the_fallen_3.name=Gord The Fallen Phase 3
-entity.boss:gord_the_fallen_4.name=Gord The Fallen Phase 4
+entity.bsword:gord_the_fallen.name=Gord The Fallen
+item.spawn_egg.entity.bsword:gord_the_fallen.name=Spawn Gord The Fallen
+entity.bsword:gord_kneeling.name=Gord The Fallen Kneeled
+entity.bsword:gord_the_fallen_2.name=Gord The Fallen Phase 2
+entity.bsword:gord_the_fallen_3.name=Gord The Fallen Phase 3
+entity.bsword:gord_the_fallen_4.name=Gord The Fallen Phase 4
 item.bsword:gord_capsule.name=Capsule of Gord
