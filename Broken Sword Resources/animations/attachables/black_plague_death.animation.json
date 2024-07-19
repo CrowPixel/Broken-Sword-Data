@@ -1,0 +1,11 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.black_plague_death.first_person_hold": {
+			"loop": true
+		},
+		"animation.black_plague_death.third_person_hold": {
+			"loop": true
+		}
+	}
+}
