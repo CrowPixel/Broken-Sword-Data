@@ -1,12 +1,9 @@
 {
-	"format_version": "1.20.50",
+	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
 			"identifier": "bsword:black_plague_death",
-			"menu_category": {
-				"category": "equipment",
-				"group": "itemGroup.name.sword"
-			}
+			"category": "equipment"
 		},
 		"components": {
 			"minecraft:max_stack_size": 1,
@@ -21,34 +18,34 @@
 				"value": 49
 			},
 			"minecraft:on_use": {
-          "on_use": {
-            "event": "on_use_event"
-          }
-        }
-      },
-				"minecraft:on_hurt_entity": {
-					"event": "apply_status_effect"
-				  }
-				},
-				"events": {
-				  "apply_status_effect": {
-					"sequence": [
-					  {
-						"run_command": {
-						  "command": [
+			"on_use": {
+				"event": "on_use_event"
+				}
+			},
+			"minecraft:on_hurt_entity": {
+				"event": "apply_status_effect"
+			}
+		},
+		"events": {
+			"apply_status_effect": {
+				"sequence": [
+				{
+					"run_command": {
+						"command": [
 							"effect @e[type=!player,r=1] poison 20 2 true"
+							]
+						}
+					}
+				]
+			},
+		"on_use_event": {
+			"swing": {},
+				"run_command": {
+					"command": [
+						"summon wither_skull ^ ^ ^4 facing ^ ^ ^"
 					]
 				}
-			 }
-			]
-		  }
-		},
-		  		"on_use_event": {
-          			"swing": {},
-         				 "run_command": {
-            				"command": [
-              					"summon wither_skull ^ ^ ^4 facing ^ ^ ^"
-            ]
+			}
 		}
-	 }
+	}
 }

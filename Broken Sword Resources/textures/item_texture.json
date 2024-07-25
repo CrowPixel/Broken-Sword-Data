@@ -7,7 +7,7 @@
 			"textures": ["textures/items/gord_capsule"]
         },
 		"black_plague_death": {
-			"textures": "textures/items/black_plague_death.png"
+			"textures": ["textures/items/black_plague_death"]
 		}
 	}
 }
